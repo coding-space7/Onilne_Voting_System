@@ -9,7 +9,7 @@ public class DatabaseManager {
     public Connection getConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineVotingDB", "root", "bharat");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlineVotingDB", "user", "password");
             return con;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
